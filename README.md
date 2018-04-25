@@ -33,6 +33,8 @@ make use of Cloudinary's Fetch feature.
 
 ```Liquid
 <img src="{% cloudinary_fetch 'assets/image.png' %}">
+```
+```HTML
 <img src="https://res.cloudinary.com/<cloudinary_cloud_name>/image/fetch/<cloudinary_fetch_url>/image.png">
 ```
 
@@ -40,6 +42,8 @@ You can also combine transformations with the Fetch feature to transform your im
 
 ```Liquid
 <img src="{% cloudinary_url 'assets/image.png', w:600, q:auto, f:auto %}">
+```
+```HTML
 <img src="https://res.cloudinary.com/<cloudinary_cloud_name>/image/fetch/w_600,q_auto,f_auto/<cloudinary_fetch_url>/image.png">
 ```
 
