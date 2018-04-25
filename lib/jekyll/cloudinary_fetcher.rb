@@ -49,4 +49,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag("cloudinary_fetch", Jekyll::CloudinaryFetcher)
+Liquid::Template.register_tag("cloudinary_fetch", Jekyll::CloudinaryFetcher::Fetch)
