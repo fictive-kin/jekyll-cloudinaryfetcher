@@ -1,4 +1,5 @@
 require "jekyll/cloudinary_fetcher/version"
+require "jekyll"
 
 module Jekyll
   module CloudinaryFetcher

@@ -1,0 +1,1 @@
+require_relative "jekyll/cloudinary_fetcher"
