@@ -23,10 +23,11 @@ And then execute:
 
 Add the following to your Jekyll config:
 
-```YAML
-cloudinary_cloud_name: <CLOUDINARY_CLOUD_NAME>
-cloudinary_fetch_url: <PUBLIC_URL> # optional, defaults to site.url
-```
+| Name | Default | Description |
+| - | - | - |
+| `cloudinary_cloud_name` |  | "Cloud name" assigned in https://cloudinary.com/ |
+| `cloudinary_fetch_url` | `site.url` | Publicly accessible URL |
+| `cloudinary_fetch_skip_transform` | `[]` | Global list of file formats to which [Cloudinary transforms](https://cloudinary.com/documentation/image_transformation_reference) should never be applied |
 
 Now you can use the `cloudinary_fetch` tag in any of your Liquid templates to 
 make use of Cloudinary's Fetch feature.
