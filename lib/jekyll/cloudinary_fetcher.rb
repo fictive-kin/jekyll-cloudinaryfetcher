@@ -37,8 +37,10 @@ module Jekyll
         end
 
         asset_url = URI.join(site_url, context[@filepath])
+        asset_ext = File.extname(context[@filepath])
+        skip_transform = site.config["cloudinary_fetch_skip_transform"] || []
 
-        if @transforms.empty?
+        if @transforms.empty? or skip_transform.include? asset_ext
           return "#{cloudinary_url}/#{asset_url}"
         end
 
