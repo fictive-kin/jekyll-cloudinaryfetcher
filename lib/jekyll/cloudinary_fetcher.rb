@@ -26,6 +26,10 @@ module Jekyll
         cloud_name = site.config["cloudinary_cloud_name"]
         cloudinary_url = "https://res.cloudinary.com/#{cloud_name}/image/fetch"
 
+        if context[@filepath].nil?
+          return
+        end
+
         if cloud_name.nil?
           return "#{context[@filepath]}"
         end
